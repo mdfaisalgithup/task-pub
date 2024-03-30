@@ -2,32 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+    background-color: var(--bgSp-color);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+:root {
+
+--primary-color: #ffffff;
+--seconder-color: #000000;
+
+--bgSp-color: #F7F7F8;
+
+
+/* Collection Spotlight */
+--bg-box-spot: #F7F7F8;
+--box-border-color: #d6cdcdae;
+--box-hr-color: #6e6e6e;
+--btn-color: #000000;
+
+/* SportSection */
+--box-small-color: #e6e6e668;
+--ad-color: #006555;
 }
+
+.dark-mode {
+
+--primary-color: #000000;
+--seconder-color: #ffffff; 
+--bgSp-color: #292B32;
+
+
+/* Collection Spotlight */
+--medium-green-color: #18282A;
+--bgTwo-color: #211B2C;
+
+--bg-box-color: #3B3E47;
+
+--bg-box-spot: #211B2C;
+--box-border-color: #211B2C;
+--box-hr-color: #ffffff;
+--btn-color: #2D8CC3;
+
+
+/* SportSection */
+--box-sport-color: #3B3E47;
+--box-small-color: #292B32;
+--ad-color: #3B3E47;
+
+}
+
